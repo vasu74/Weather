@@ -6,7 +6,7 @@ import WeatherDetails from "./components/WeatherDetails";
 import RecentSearches from "./components/RecentSearches";
 import axios from "axios";
 
-const API_KEY = "a40b4fbe683c5cdf565488f86de04487";
+const API_KEY = process.env.REACT_APP_API_KEY; // Use environment variable
 
 export default function App() {
   const [weather, setWeather] = useState(null);
